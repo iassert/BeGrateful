@@ -17,7 +17,7 @@ from datetime import datetime
 app = Flask(__name__, template_folder='pages')
 app.secret_key = 'your_secret_key'
 
-
+ 
 def is_valid_email(email):
     return re.match(r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$', email)
 
